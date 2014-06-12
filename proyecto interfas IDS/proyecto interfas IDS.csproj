@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{D6B39FC7-95A9-4CE3-995C-3E93D9A1119E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proyecto_interfas_IDS</RootNamespace>
+    <AssemblyName>proyecto interfas IDS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\Desktop\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="administrador.cs" />
+    <Compile Include="administrador.Designer.cs">
+      <DependentUpon>administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agreempleado.cs" />
+    <Compile Include="Agreempleado.Designer.cs">
+      <DependentUpon>Agreempleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientes.cs" />
+    <Compile Include="clientes.Designer.cs">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editacliente.cs" />
+    <Compile Include="editacliente.Designer.cs">
+      <DependentUpon>editacliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editaempleado.cs" />
+    <Compile Include="editaempleado.Designer.cs">
+      <DependentUpon>editaempleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editainventario.cs" />
+    <Compile Include="editainventario.Designer.cs">
+      <DependentUpon>editainventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editaprovedor.cs" />
+    <Compile Include="editaprovedor.Designer.cs">
+      <DependentUpon>editaprovedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="funciones.cs" />
+    <Compile Include="inventario.cs" />
+    <Compile Include="inventario.Designer.cs">
+      <DependentUpon>inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MYSQL.cs" />
+    <Compile Include="productos.cs" />
+    <Compile Include="productos.Designer.cs">
+      <DependentUpon>productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedores.cs" />
+    <Compile Include="proveedores.Designer.cs">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regempleados.cs" />
+    <Compile Include="regempleados.Designer.cs">
+      <DependentUpon>regempleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registros.cs" />
+    <Compile Include="registros.Designer.cs">
+      <DependentUpon>registros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reproveedor.cs" />
+    <Compile Include="reproveedor.Designer.cs">
+      <DependentUpon>reproveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios.cs" />
+    <Compile Include="usuarios.Designer.cs">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventas.cs" />
+    <Compile Include="ventas.Designer.cs">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="administrador.resx">
+      <DependentUpon>administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agreempleado.resx">
+      <DependentUpon>Agreempleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes.resx">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editacliente.resx">
+      <DependentUpon>editacliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editaempleado.resx">
+      <DependentUpon>editaempleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editainventario.resx">
+      <DependentUpon>editainventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editaprovedor.resx">
+      <DependentUpon>editaprovedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventario.resx">
+      <DependentUpon>inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productos.resx">
+      <DependentUpon>productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proveedores.resx">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regempleados.resx">
+      <DependentUpon>regempleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registros.resx">
+      <DependentUpon>registros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reproveedor.resx">
+      <DependentUpon>reproveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usuarios.resx">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas.resx">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
